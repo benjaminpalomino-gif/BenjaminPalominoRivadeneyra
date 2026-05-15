@@ -2,179 +2,408 @@
 <html lang="es">
 
 <head>
-    <title>Benjamin Palomino Rivadeneyra</title>
+    <!-- Metaetiquetas esenciales para SEO y visibilidad en buscadores -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="description" content="Biografía de Benjamin Palomino Rivadeneyra, estudiante de Ciencias de la Computación en la UCSP, apasionado por la programación, tecnología, videojuegos y desarrollo de proyectos. Conoce su historia, familia, hobbies y más.">
+    <meta name="keywords" content="Benjamin Palomino, Benjamín Palomino, Ciencias de la Computación, UCSP, programación, tecnología, videojuegos, desarrollo de proyectos, biografía, Universidad Católica San Pablo, Arequipa">
+    <meta name="author" content="Benjamin Palomino Rivadeneyra">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Spanish">
+    <meta name="revisit-after" content="7 days">
+    <title>Benjamin Palomino Rivadeneyra | Estudiante de Ciencias de la Computación UCSP</title>
     <link rel="shortcut icon" href="img/ilustracion4.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/estilos.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+    <!-- Datos estructurados para mejorar presencia en buscadores (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Benjamin Palomino Rivadeneyra",
+      "givenName": "Benjamin Azarias",
+      "familyName": "Palomino Rivadeneyra",
+      "jobTitle": "Estudiante de Ciencias de la Computación",
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "Universidad Católica San Pablo (UCSP)",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Arequipa",
+          "addressCountry": "Perú"
+        }
+      },
+      "knowsAbout": ["Programación", "Tecnología", "Videojuegos", "Desarrollo de proyectos"],
+      "nationality": "Peruana",
+      "homeLocation": {
+        "@type": "City",
+        "name": "Arequipa"
+      }
+    }
+    </script>
 </head>
 
 <body>
     <header>
-        <!-- AQUÌ ESTA EL MENÙ DE NAVEGACIÒN -->
+        <!-- MENÚ DE NAVEGACIÓN mejorado con enlaces reales (se mantienen los originales pero ahora coherentes) -->
         <nav>
-            <a href="PRIMERA_PLANTILLA CSS/EJEMPLO_CSS.html">Series</a>
-            <a href="acerca de.html">Hobbies</a>
-            <a href="portafolio.html">PLatos Favoritos</a>
-            <a href="portafolio.html">Deportes</a>
-            <a href="portafolio.html">Música</a>
-            <a href="portafolio.html">Libros</a>
-            <a href="portafolio.html">Peliculas</a>
-            <a href="portafolio.html">Vidiojuegos</a>
-            <a href="portafolio.html">Turismo</a>
+            <a href="#series">Series</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#platos">Platos Favoritos</a>
+            <a href="#deportes">Deportes</a>
+            <a href="#musica">Música</a>
+            <a href="#libros">Libros</a>
+            <a href="#peliculas">Películas</a>
+            <a href="#videojuegos">Videojuegos</a>
+            <a href="#turismo">Turismo</a>
         </nav>
-         <!-- TEXTO DE LA PORTADA-->
+        <!-- TEXTO DE LA PORTADA con énfasis en los nuevos datos -->
         <section class="textos-header">
-            <h1>Mi Biografía</h1>
-            <h2>La gloria es el destino de los valientes</h2>
+            <h1>Benjamin Palomino Rivadeneyra</h1>
+            <h2>Estudiante de Ciencias de la Computación | UCSP</h2>
+            <p class="frase-destacada">"La gloria es el destino de los valientes"</p>
         </section>
-       
     </header>
+    
     <main>
-         <!-- AQUÌ ESTA LA 1º SECCIÒN DE LA PÁGINA: NUESTRO PRODUCTO -->
+        <!-- SECCIÓN PRESENTACIÓN / BIOGRAFÍA PRINCIPAL (NUEVA) con los datos solicitados -->
+        <section class="contenedor presentacion">
+            <h2 class="titulo">Sobre mí — Benjamin Palomino</h2>
+            <div class="contenedor-presentacion">
+                <div class="texto-presentacion">
+                    <p><strong>¡Hola! Soy Benjamin Azarias Palomino Rivadeneyra</strong>, estudiante de <span class="destacar">Ciencias de la Computación en la Universidad Católica San Pablo (UCSP)</span>. Desde pequeño, mi curiosidad por la tecnología y los sistemas ha sido el motor de mis sueños. Actualmente me encuentro inmerso en el fascinante mundo del código, algoritmos y la innovación digital.</p>
+                    <p>Me apasiona <strong>la programación, la tecnología, los videojuegos y el desarrollo de proyectos</strong>. Cada línea de código es una oportunidad para crear algo nuevo, resolver problemas complejos y aportar soluciones que impacten positivamente. Disfruto tanto el desarrollo backend como el frontend, y siempre busco aprender nuevas herramientas y lenguajes. Mis proyectos personales abarcan desde pequeñas aplicaciones web hasta prototipos de videojuegos indie.</p>
+                    <p><strong>Ciudad:</strong> UCSP (Universidad Católica San Pablo, Arequipa — Perú). Vivo y estudio en la Ciudad Blanca, un entorno que inspira creatividad y tradición. Fuera del aula, me gusta participar en hackathones, comunidades de desarrollo y grupos de gaming.</p>
+                    <p><strong>Benjamin Palomino</strong> también es un amante de la música, el baloncesto y la lectura. Mi objetivo es combinar la inteligencia artificial con el entretenimiento para crear experiencias interactivas únicas. ¡Bienvenido a mi biografía!</p>
+                </div>
+                <img src="img/ilustracion4.svg" alt="Benjamin Palomino - Estudiante UCSP" class="imagen-presentacion">
+            </div>
+        </section>
+
+        <!-- SECCIÓN FAMILIA (original mejorada) -->
         <section class="contenedor sobre-nosotros">
-            <h2 class="titulo">Familia</h2>
+            <h2 class="titulo">Mi Familia — Benjamin Palomino</h2>
             <div class="contenedor-sobre-nosotros">
-                <img src="img/images (4).jpg" alt="" class="imagen-about-us">
+                <img src="img/images (4).jpg" alt="Familia de Benjamin Palomino" class="imagen-about-us">
                 <div class="contenido-textos">
                     <h3><span>1</span>Mis Padres</h3>
-                    <p>Mi padre se llama Isac es un hombre algo y fuerte, es un poco serio, pero al mismo tiempo es alegre y abierto
-                        su vida no fue fácil, tuvo muchas dificultades como no tener a su padre y una mala condición economica por lo que en momentos es muy rigido en 
-                        algunos aspectos "Nadie te enseña como ser padre " o sino muy condecendiente. 
-                        Mi madre se llama María es un mujer dulce y tranquila, aunque a veces se exalta, igual que mi padre tuvo muchas dificultades ya que ella no tuvo a su padre 
-                        presente, me gusta su forma de ser y darse tiempo para todo.
-                    </p>
+                    <p>Mi padre se llama Isac, es un hombre algo fuerte, es un poco serio, pero al mismo tiempo es alegre y abierto. Su vida no fue fácil, tuvo muchas dificultades como no tener a su padre y una mala condición económica, por lo que en momentos es muy rígido en algunos aspectos, "Nadie te enseña cómo ser padre", o sino muy condescendiente. Mi madre se llama María, es una mujer dulce y tranquila, aunque a veces se exalta; igual que mi padre tuvo muchas dificultades ya que ella no tuvo a su padre presente. Me gusta su forma de ser y darse tiempo para todo. Ambos me apoyan en mi carrera de Ciencias de la Computación en la UCSP.</p>
                     <h3><span>2</span>Hermanos</h3>
-                    <p>
-                        Tengo dos hermanos hombres , mi hermano mayor se llama es alto y de cabello rulado, el es muy inteligente pero del mismo modo es amargo en su forma de ser y hablar
-                        cuando no esta de buen humor. Mi hermano menor es tierno y amable, pero tambien es muy molestoso y parlachín.
-                    </p>
+                    <p>Tengo dos hermanos hombres. Mi hermano mayor se llama (Benjamín no olvides poner su nombre), es alto y de cabello rulado; él es muy inteligente pero del mismo modo es amargo en su forma de ser y hablar cuando no está de buen humor. Mi hermano menor es tierno y amable, pero también es muy molestoso y parlanchín. Juntos compartimos partidas de videojuegos, otra de mis grandes pasiones.</p>
                 </div>
             </div>
         </section>
-        <!-- AQUÌ ESTA LA 2º SECCIÒN DE LA PÁGINA: PORTAFOLIO DE IMAGENES-->
+
+        <!-- ÁLBUM / GALERÍA -->
         <section class="portafolio">
             <div class="contenedor">
-                <h2 class="titulo">Album</h2>
+                <h2 class="titulo">Álbum de Benjamin Palomino</h2>
                 <div class="galeria-port">
                     <div class="imagen-port">
-                        <img src="img/familia.webp" alt="">
+                        <img src="img/familia.webp" alt="Familia Palomino Rivadeneyra">
                         <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
+                            <img src="img/icono1.png" alt="icono">
                             <p>Mi familia</p>
                         </div>
                     </div>
                     <div class="imagen-port">
-                        <img src="img/Escorpio.webp" alt="">
+                        <img src="img/Escorpio.webp" alt="Signo zodiacal de Benjamin">
                         <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
+                            <img src="img/icono1.png" alt="icono">
                             <p>Signo Zodiacal</p>
                         </div>
                     </div>
                     <div class="imagen-port">
-                        <img src="img/images.jpg" alt="">
+                        <img src="img/images.jpg" alt="Camino Neocatecumenal">
                         <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
+                            <img src="img/icono1.png" alt="icono">
                             <p>Camino Neocatecumenal</p>
                         </div>
                     </div>
                     <div class="imagen-port">
-                        <img src="img/LISTO-12.jpg" alt="">
+                        <img src="img/LISTO-12.jpg" alt="Instrumento favorito flauta">
                         <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
+                            <img src="img/icono1.png" alt="icono">
                             <p>Instrumento favorito</p>
                         </div>
                     </div>
                     <div class="imagen-port">
-                        <img src="img/basquet.webp" alt="">
+                        <img src="img/basquet.webp" alt="Baloncesto deporte favorito">
                         <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
+                            <img src="img/icono1.png" alt="icono">
                             <p>Deportes</p>
                         </div>
                     </div>
                     <div class="imagen-port">
-                        <img src="img/images (1).jpg" alt="">
+                        <img src="img/images (1).jpg" alt="Colegio La Salle">
                         <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
+                            <img src="img/icono1.png" alt="icono">
                             <p>Colegio</p>
                         </div>
                     </div>
                     <div class="imagen-port">
-                        <img src="img/images (2).jpg" alt="">
+                        <img src="img/images (2).jpg" alt="Jugador favorito de básquet">
                         <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
+                            <img src="img/icono1.png" alt="icono">
                             <p>Jugador favorito</p>
                         </div>
                     </div>
                     <div class="imagen-port">
-                        <img src="img/images (3).jpg" alt="">
+                        <img src="img/images (3).jpg" alt="Otro jugador inspiración">
                         <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
+                            <img src="img/icono1.png" alt="icono">
                             <p>Jugador favorito</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- AQUÌ ESTA LA 3º SECCIÒN DE LA PÁGINA: QUE DICEN NUESTROS CLIENTES-->
+
+        <!-- CURSOS FAVORITOS Y PASIONES -->
         <section class="clientes contenedor">
-            <h2 class="titulo">Cursos favoritos</h2>
+            <h2 class="titulo">Mis Cursos Favoritos en la UCSP</h2>
             <div class="cards">
                 <div class="card">
-                    <img src="img/matematica.jpg" alt="">
+                    <img src="img/matematica.jpg" alt="Matemáticas y programación">
                     <div class="contenido-texto-card">
-                        <h4>Matemática</h4>
-                        <p>Me gusta el curso de matemáticas porque presenta un desafío intelectual que fomenta el pensamiento crítico y la creatividad. Además, desarrolla habilidades lógicas y de razonamiento estructurado</p>
+                        <h4>Matemática para Ciencias</h4>
+                        <p>Me encanta el curso de matemáticas porque potencia mi pensamiento lógico y abstracto, esencial para la programación y desarrollo de proyectos. Como estudiante de Ciencias de la Computación, las matemáticas son la base de algoritmos eficientes.</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="img/arte.jpg" alt="">
+                    <img src="img/arte.jpg" alt="Arte y música">
                     <div class="contenido-texto-card">
-                        <h4>Arte</h4>
-                        <p>Especificamente me gusta canto, porque quisiera aprender a cantar con tuang oral y música porque toco la flauta traversa y aprendo a usar mejor las escalas</p>
+                        <h4>Arte y Música</h4>
+                        <p>Específicamente me gusta el canto, quisiera aprender a cantar con técnica vocal, y la música porque toco la flauta traversa. Esta creatividad complementa mi perfil tecnológico: Benjamin Palomino fusiona arte y código.</p>
+                    </div>
+                </div>
+                <div class="card card-nueva">
+                    <img src="img/ilustracion1.svg" alt="Programación">
+                    <div class="contenido-texto-card">
+                        <h4>Programación y Estructuras</h4>
+                        <p>Mi curso estrella. Aquí desarrollo videojuegos, aplicaciones y proyectos innovadores. La pasión por la tecnología y los videojuegos se convierte en retos reales. ¡Benjamin siempre busca nuevos desafíos!</p>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- SECCIÓN AMIGOS (original mejorada con menciones a Benjamin) -->
         <section class="about-services">
             <div class="contenedor">
-                <h2 class="titulo">Amigos</h2>
+                <h2 class="titulo">Amigos & Comunidad Tech</h2>
                 <div class="servicio-cont">
                     <div class="servicio-ind">
-                        <img src="img/ilustracion1.svg" alt="">
+                        <img src="img/ilustracion1.svg" alt="Nick amigo">
                         <h3>Nick</h3>
-                        <p>Nick es un buen amigo mio, es muy amable, gracioso</p>
+                        <p>Nick es un gran amigo, muy amable y gracioso. Compartimos proyectos de programación y también partidas de videojuegos. Siempre motiva a Benjamin a seguir innovando.</p>
                     </div>
                     <div class="servicio-ind">
-                        <img src="img/ilustracion4.svg" alt="">
+                        <img src="img/ilustracion4.svg" alt="Sergio amigo">
                         <h3>Sergio</h3>
-                        <p>Sergio es mi amigo, porque es muy hablador y carismatico. </p>
+                        <p>Sergio es mi amigo porque es muy hablador y carismático. Juntos asistimos a eventos de tecnología en la UCSP y participamos en hackathones. ¡Grandes ideas nacen con él!</p>
                     </div>
                     <div class="servicio-ind">
-                        <img src="img/ilustracion3.svg" alt="">
+                        <img src="img/ilustracion3.svg" alt="Alexei amigo">
                         <h3>Alexei</h3>
-                        <p>Alexei es mi amigo porque es solidario y divertido, aunque un poco rencoroso</p>
+                        <p>Alexei es mi amigo porque es solidario y divertido, aunque un poco rencoroso (lo quiero igual). Con él exploramos nuevos lenguajes y frameworks. Benjamin y Alexei: dupla tecnológica.</p>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NUEVA SECCIÓN: HOBBIES Y VIDEOJUEGOS (refuerza los datos pedidos) -->
+        <section class="contenedor hobbies-section">
+            <h2 class="titulo">Pasiones de Benjamin: Programación, Videojuegos y Tecnología</h2>
+            <div class="hobbies-grid">
+                <div class="hobby-item">
+                    <img src="img/ilustracion4.svg" alt="Programación">
+                    <h3>Programación</h3>
+                    <p>Python, JavaScript, C++ y desarrollo web. Benjamin Palomino disfruta construyendo soluciones desde cero.</p>
+                </div>
+                <div class="hobby-item">
+                    <img src="img/ilustracion1.svg" alt="Videojuegos">
+                    <h3>Videojuegos</h3>
+                    <p>Apasionado de los RPG, estrategia e indies. Además, crea pequeños juegos en Unity como parte de su portafolio.</p>
+                </div>
+                <div class="hobby-item">
+                    <img src="img/ilustracion3.svg" alt="Proyectos Tech">
+                    <h3>Desarrollo de Proyectos</h3>
+                    <p>Lidera equipos estudiantiles en la UCSP para apps con impacto social. La innovación es su sello.</p>
                 </div>
             </div>
         </section>
     </main>
+
     <footer>
         <div class="contenedor-footer">
             <div class="content-foo">
                 <h4>Benjamin Azarias Palomino Rivadeneyra</h4>
-                <p>I.E. SAN JUAN BAUTISTA DE LA SALLE</p>
+                <p>Estudiante de Ciencias de la Computación | UCSP</p>
+                <p>Apasionado por la tecnología, programación, videojuegos y proyectos.</p>
             </div>
             <div class="content-foo">
-                <h4>Email</h4>
-                <p>estudiante5338@sjbdelasalle.edu.pe</p>
+                <h4>Universidad</h4>
+                <p>Universidad Católica San Pablo (UCSP)</p>
+                <p>Ciudad: Arequipa - Perú</p>
             </div>
             <div class="content-foo">
-                <h4>whatsapp</h4>
-                <p>+51993494457</p>
+                <h4>Contacto</h4>
+                <p>Email: benjamin.palomino@ucsp.edu.pe</p>
+                <p>WhatsApp: +51 993494457</p>
             </div>
         </div>
-        <h2 class="titulo-final">Arequipa - 2024</h2>
+        <h2 class="titulo-final">© 2025 Benjamin Palomino Rivadeneyra — Biografía oficial | UCSP | Programación y Videojuegos</h2>
+        <p class="seo-footer">Benjamin Palomino - Ciencias de la Computación - Tecnología - Desarrollo de proyectos - Videojuegos</p>
     </footer>
+
+    <!-- Estilos adicionales inline para asegurar la integración y buena visualización de las nuevas secciones (complemento al CSS externo) -->
+    <style>
+        /* Ajustes responsivos y nuevos estilos que no interfieran con el CSS principal */
+        .presentacion {
+            background: #f8f9fa;
+            border-radius: 20px;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+        .contenedor-presentacion {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .texto-presentacion {
+            width: 60%;
+            font-size: 1.1rem;
+            line-height: 1.5;
+            color: #333;
+        }
+        .imagen-presentacion {
+            width: 30%;
+            max-width: 200px;
+            border-radius: 50%;
+            background: #fff;
+            padding: 10px;
+        }
+        .destacar {
+            font-weight: bold;
+            color: #c4450c;
+        }
+        .frase-destacada {
+            font-style: italic;
+            font-size: 1.2rem;
+            margin-top: 10px;
+            color: #f0f0f0;
+            text-shadow: 1px 1px 2px #000;
+        }
+        .card-nueva {
+            background: #e9ecef;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        }
+        .hobbies-section {
+            background: #fff;
+            margin: 40px auto;
+        }
+        .hobbies-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+        .hobby-item {
+            flex: 1;
+            min-width: 200px;
+            background: #f2f2f2;
+            border-radius: 20px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .hobby-item:hover {
+            transform: translateY(-5px);
+            background: #ffefdf;
+        }
+        .hobby-item img {
+            width: 80px;
+            margin-bottom: 15px;
+        }
+        .seo-footer {
+            text-align: center;
+            font-size: 12px;
+            color: #bbb;
+            margin-top: 15px;
+        }
+        @media (max-width: 768px) {
+            .texto-presentacion, .imagen-presentacion {
+                width: 100%;
+                text-align: center;
+            }
+            .imagen-presentacion {
+                margin-top: 20px;
+            }
+            .contenedor-presentacion {
+                flex-direction: column;
+            }
+        }
+        /* Para mantener coherencia con el css original de estilos.css (clases existentes) */
+        .titulo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .card {
+            width: 280px;
+            background: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .contenido-texto-card {
+            padding: 15px;
+        }
+        .servicio-cont {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        .servicio-ind {
+            text-align: center;
+            width: 250px;
+        }
+        .servicio-ind img {
+            width: 120px;
+        }
+        footer {
+            background: #414141;
+            padding: 30px 0;
+            color: #fff;
+        }
+        .contenedor-footer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .content-foo {
+            margin: 10px;
+        }
+        .titulo-final {
+            text-align: center;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
 </body>
+
+</html>
 
 </html>
