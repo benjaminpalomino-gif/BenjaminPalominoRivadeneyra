@@ -196,6 +196,48 @@
             flex: 1;
         }
 
+        /* Galería de hobbies con imágenes reales */
+        .galeria-hobbies {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+        .hobby-card {
+            background: #fff;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            transition: transform 0.2s;
+            text-align: center;
+        }
+        .hobby-card:hover {
+            transform: translateY(-5px);
+        }
+        .hobby-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+        }
+        .hobby-card p {
+            padding: 12px;
+            font-weight: 600;
+            background: white;
+        }
+
+        .amigo-link {
+            display: inline-block;
+            margin-top: 8px;
+            font-size: 0.85rem;
+            color: #ff914d;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .amigo-link:hover {
+            text-decoration: underline;
+        }
+
         footer {
             background: #1e2a36;
             color: #ddd;
@@ -238,9 +280,9 @@
     <header>
         <section class="textos-header">
             <h1>Benjamin Azarías Palomino Rivadeneyra</h1>
-            <h2>Estudiante de <a href="https://ucsp.edu.pe" target="_blank">Ciencias de la Computación | UCSP</a></h2>
+            <h2>Estudiante de <a href="https://ucsp.edu.pe" target="_blank">Ciencias de la Computacion | UCSP</a></h2>
             <p class="frase-destacada">"La gloria es el destino de los valientes"</p>
-            <a href="http://www.linkedin.com/in/benjam%C3%ADn-azar%C3%ADas-palomino-rivadeneyra-8359ba414" target="_blank" class="btn-linkedin">🔗 Ver mi LinkedIn</a>
+            <a href="http://www.linkedin.com/in/benjam%C3%ADn-azar%C3%ADas-palomino-rivadeneyra-8359ba414" target="_blank" class="btn-linkedin">Ver mi LinkedIn</a>
         </section>
     </header>
 
@@ -248,88 +290,86 @@
         <!-- PERFIL TIPO CV + PROFESORES -->
         <div class="contenedor">
             <div class="cv-grid">
-                <!-- columna izquierda: datos personales y resumen -->
                 <div class="info-basica">
                     <img src="img/ilustracion4.svg" alt="Benjamin Palomino">
                     <h3>Benjamin Palomino</h3>
-                    <p class="titulo-cv">🎓 Estudiante de Ciencias de la Computación</p>
-                    <p><strong>📍 Arequipa, Perú</strong> — Universidad Católica San Pablo</p>
-                    <p><strong>📧</strong> benjamin.palomino@ucsp.edu.pe</p>
-                    <p><strong>📱</strong> +51 993494457</p>
-                    <p><strong>🎯 Intereses:</strong> Programación, videojuegos, desarrollo de proyectos, inteligencia artificial.</p>
-                    <p><strong>🌟 Mentor:</strong> <a href="https://www.linkedin.com/in/ecuadrosv/" target="_blank">Dr. Ernesto Cuadros-Vargas</a> (Distinguished Speaker ACM)</p>
+                    <p class="titulo-cv">Estudiante de Ciencias de la Computacion</p>
+                    <p><strong>Ubicacion:</strong> Arequipa, Peru  Universidad Catolica San Pablo</p>
+                    <p><strong>Email:</strong> benjamin.palomino@ucsp.edu.pe</p>
+                    <p><strong>Telefono:</strong> +51 993494457</p>
+                    <p><strong>Intereses:</strong> Programacion, videojuegos, desarrollo de proyectos, inteligencia artificial.</p>
+                    <p><strong>Mentor:</strong> <a href="https://www.linkedin.com/in/ecuadrosv/" target="_blank">Dr. Ernesto Cuadros-Vargas</a> (Distinguished Speaker ACM)</p>
                 </div>
 
-                <!-- columna derecha: formación académica y docentes -->
                 <div class="detalle-academico">
-                    <h4>📖 Formación Universitaria</h4>
-                    <p><strong>Universidad Católica San Pablo (UCSP)</strong> — Ciencias de la Computación (2024 - presente)<br>
-                    Cursos destacados: Fundamentos de Programación, Lógica, Matemática Computacional, Introducción a la Computación.</p>
+                    <h4>Formacion Universitaria</h4>
+                    <p><strong>Universidad Catolica San Pablo (UCSP)</strong>  Ciencias de la Computacion (2024 - presente)<br>
+                    Cursos destacados: Fundamentos de Programacion, Logica, Matematica Computacional, Introduccion a la Computacion.</p>
                     
-                    <h4>👨‍🏫 Cuerpo Docente — Ciclo actual</h4>
+                    <h4>Cuerpo Docente  Ciclo actual</h4>
                     <ul class="lista-docentes">
-                        <li><strong>Introducción a la Vida Universitaria</strong> — Claudia Lucia Quiroz Pacheco  
-                            <a href="#" target="_blank">(linkedin no disponible)</a>
+                        <li><strong>Introduccion a la Vida Universitaria</strong>  Claudia Lucia Quiroz Pacheco  
+                            <a href="#">(linkedin no disponible)</a>
                         </li>
-                        <li><strong>Comunicación I</strong> — Angel David Rodriguez Cruz  
-                            <a href="#" target="_blank">(linkedin no disponible)</a>
+                        <li><strong>Comunicacion I</strong>  Angel David Rodriguez Cruz  
+                            <a href="#">(linkedin no disponible)</a>
                         </li>
-                        <li><strong>Lógica</strong> — Yahaira Byrne Rivera  
-                            <a href="#" target="_blank">(linkedin no disponible)</a>
+                        <li><strong>Logica</strong>  Yahaira Byrne Rivera  
+                            <a href="#">(linkedin no disponible)</a>
                         </li>
-                        <li><strong>Fundamentos de Programación</strong> — Kelly Vizconde La Motta  
-                            <a href="#" target="_blank">(linkedin no disponible)</a>
+                        <li><strong>Fundamentos de Programacion</strong>  Kelly Vizconde La Motta  
+                            <a href="#">(linkedin no disponible)</a>
                         </li>
-                        <li><strong>Fundamentos Matemáticos para Computación</strong> — Sabrina Graciela Suarez Calcina  
-                            <a href="#" target="_blank">(linkedin no disponible)</a>
+                        <li><strong>Fundamentos Matematicos para Computacion</strong>  Sabrina Graciela Suarez Calcina  
+                            <a href="#">(linkedin no disponible)</a>
                         </li>
-                        <li><strong>Introducción a Computación</strong> — Ernesto Cuadros Vargas  
-                            <a href="https://www.linkedin.com/in/ecuadrosv/" target="_blank">🔗 linkedin.com/in/ecuadrosv</a>
+                        <li><strong>Introduccion a Computacion</strong>  Ernesto Cuadros Vargas  
+                            <a href="https://www.linkedin.com/in/ecuadrosv/" target="_blank">linkedin.com/in/ecuadrosv</a>
                         </li>
                     </ul>
-                    <p style="margin-top: 15px; font-size: 0.9rem;">* Algunos perfiles no comparten LinkedIn público, se indica cuando está disponible.</p>
+                    <p style="margin-top: 15px; font-size: 0.9rem;">* Algunos perfiles no comparten LinkedIn publico, se indica cuando esta disponible.</p>
                 </div>
             </div>
         </div>
 
-        <!-- SECCIÓN: MI FAMILIA (RESUMIDA) -->
+        <!-- SECCION: MI FAMILIA (RESUMIDA) -->
         <div class="contenedor seccion-cv">
-            <h3>👪 Mi Familia</h3>
+            <h3>Mi Familia</h3>
             <div class="familia-flex">
                 <div class="familia-item">
                     <h4>Padres</h4>
-                    <p><strong>Isac</strong> (padre) — hombre fuerte, serio pero alegre, apoyo incondicional.<br>
-                    <strong>María</strong> (madre) — dulce y tranquila, ambos han sido pilar en mi carrera en la UCSP.</p>
+                    <p><strong>Isac</strong> (padre)  hombre fuerte, serio pero alegre, apoyo incondicional.<br>
+                    <strong>Maria</strong> (madre)  dulce y tranquila, ambos han sido pilar en mi carrera en la UCSP.</p>
                 </div>
                 <div class="familia-item">
                     <h4>Hermanos</h4>
-                    <p><strong>Hermano mayor</strong>: inteligente, carácter amargo a veces.<br>
-                    <strong>Hermano menor</strong>: tierno, parlanchín y compañero de videojuegos.<br>
-                    Juntos compartimos la pasión por los juegos y la tecnología.</p>
+                    <p><strong>Hermano mayor</strong>: inteligente, caracter amargo a veces.<br>
+                    <strong>Hermano menor</strong>: tierno, parlanchin y compañero de videojuegos.<br>
+                    Juntos compartimos la pasion por los juegos y la tecnologia.</p>
                 </div>
             </div>
         </div>
 
-        <!-- SOBRE MÍ + MENTOR (RESUMEN CV) -->
+        <!-- SOBRE MI + MENTOR (RESUMEN CV) -->
         <div class="contenedor seccion-cv">
-            <h3>✨ Sobre mí — Perfil profesional</h3>
-            <p>Soy <strong>Benjamin Azarías Palomino Rivadeneyra</strong>, estudiante de Ciencias de la Computación en la <strong>UCSP</strong> (Arequipa). Apasionado por la programación, desarrollo de software y los videojuegos. Tengo sólida curiosidad por resolver problemas mediante algoritmos y crear proyectos innovadores. Participo en comunidades tech, hackathones y grupos de gaming. Mi objetivo es especializarme en desarrollo backend e inteligencia artificial aplicada.</p>
-            <p>Bajo la mentoría del <strong>Dr. Ernesto Cuadros-Vargas</strong> (IEEE Senior Member, Distinguished Speaker ACM), fortalezco mis bases en pensamiento computacional y estándares internacionales de la computación. [citation:2][citation:3]</p>
+            <h3>Sobre mi  Perfil profesional</h3>
+            <p>Soy <strong>Benjamin Azarias Palomino Rivadeneyra</strong>, estudiante de Ciencias de la Computacion en la <strong>UCSP</strong> (Arequipa). Apasionado por la programacion, desarrollo de software y los videojuegos. Tengo solida curiosidad por resolver problemas mediante algoritmos y crear proyectos innovadores. Participo en comunidades tech, hackathones y grupos de gaming. Mi objetivo es especializarme en desarrollo backend e inteligencia artificial aplicada.</p>
+            <p>Bajo la mentoria del <strong>Dr. Ernesto Cuadros-Vargas</strong> (IEEE Senior Member, Distinguished Speaker ACM), fortalezco mis bases en pensamiento computacional y estandares internacionales de la computacion.</p>
         </div>
 
         <!-- PASIONES Y CURSOS FAVORITOS -->
         <div class="contenedor seccion-cv">
-            <h3>⚡ Pasiones & Habilidades clave</h3>
+            <h3>Pasiones y Habilidades clave</h3>
             <div class="grid-pasiones">
                 <div class="pasion-card">
                     <img src="img/ilustracion1.svg" width="60" alt="code">
-                    <h4>Programación</h4>
+                    <h4>Programacion</h4>
                     <p>Python, JavaScript, C++. Desarrollo web y prototipos de videojuegos.</p>
                 </div>
                 <div class="pasion-card">
                     <img src="img/ilustracion4.svg" width="60" alt="games">
                     <h4>Videojuegos</h4>
-                    <p>RPG, estrategia, indie. Creación en Unity y GameMaker.</p>
+                    <p>RPG, estrategia, indie. Creacion en Unity y GameMaker.</p>
                 </div>
                 <div class="pasion-card">
                     <img src="img/ilustracion3.svg" width="60" alt="proyectos">
@@ -337,49 +377,88 @@
                     <p>Liderazgo en equipos estudiantiles, apps con impacto social.</p>
                 </div>
             </div>
-            <h4 style="margin-top: 30px;">📚 Cursos favoritos en la UCSP</h4>
+            <h4 style="margin-top: 30px;">Cursos favoritos en la UCSP</h4>
             <ul style="margin-left: 25px;">
-                <li><strong>Matemática para Ciencias</strong> — base del pensamiento lógico y abstracto.</li>
-                <li><strong>Arte y Música</strong> — canto y flauta traversa; complemento creativo.</li>
-                <li><strong>Programación y Estructuras</strong> — mi espacio para construir soluciones reales.</li>
+                <li><strong>Matematica para Ciencias</strong>  base del pensamiento logico y abstracto.</li>
+                <li><strong>Arte y Musica</strong>  canto y flauta traversa; complemento creativo.</li>
+                <li><strong>Programacion y Estructuras</strong>  mi espacio para construir soluciones reales.</li>
             </ul>
         </div>
 
-        <!-- AMIGOS & COMUNIDAD -->
+        <!-- HOBBIES CON IMAGENES (GALERIA RESTAURADA) -->
         <div class="contenedor seccion-cv">
-            <h3>🤝 Amigos & Comunidad Tech</h3>
-            <div class="grid-pasiones">
-                <div class="pasion-card"><strong>Nick</strong><br>Amigo, gracioso, compañero de proyectos de programación y gaming.</div>
-                <div class="pasion-card"><strong>Sergio</strong><br>Carismático, participamos juntos en eventos y hackathones UCSP.</div>
-                <div class="pasion-card"><strong>Alexei</strong><br>Solidario y divertido, exploramos nuevos lenguajes y frameworks.</div>
+            <h3>Hobbies</h3>
+            <div class="galeria-hobbies">
+                <div class="hobby-card">
+                    <img src="img/familia.webp" alt="Familia Palomino Rivadeneyra">
+                    <p>Mi familia</p>
+                </div>
+                <div class="hobby-card">
+                    <img src="img/Escorpio.webp" alt="Signo zodiacal de Benjamin">
+                    <p>Signo Zodiacal</p>
+                </div>
+                <div class="hobby-card">
+                    <img src="img/images.jpg" alt="Camino Neocatecumenal">
+                    <p>Camino Neocatecumenal</p>
+                </div>
+                <div class="hobby-card">
+                    <img src="img/LISTO-12.jpg" alt="Instrumento favorito flauta">
+                    <p>Instrumento favorito</p>
+                </div>
+                <div class="hobby-card">
+                    <img src="img/basquet.webp" alt="Baloncesto deporte favorito">
+                    <p>Deportes</p>
+                </div>
+                <div class="hobby-card">
+                    <img src="img/images (1).jpg" alt="Colegio La Salle">
+                    <p>Colegio</p>
+                </div>
+                <div class="hobby-card">
+                    <img src="img/images (2).jpg" alt="Jugador favorito de basquet">
+                    <p>Jugador favorito</p>
+                </div>
+                <div class="hobby-card">
+                    <img src="img/images (3).jpg" alt="Otro jugador inspiracion">
+                    <p>Jugador favorito</p>
+                </div>
             </div>
         </div>
 
-        <!-- GALERÍA SIMBÓLICA (ÁLBUM) -->
+        <!-- AMIGOS Y COMUNIDAD CON ESPACIO PARA LINKS -->
         <div class="contenedor seccion-cv">
-            <h3>📸 Álbum personal</h3>
-            <div class="grid-pasiones" style="gap: 15px;">
-                <div class="pasion-card" style="background:#f0f0f0;">Familia</div>
-                <div class="pasion-card" style="background:#f0f0f0;">Signo Escorpio</div>
-                <div class="pasion-card" style="background:#f0f0f0;">Camino Neocatecumenal</div>
-                <div class="pasion-card" style="background:#f0f0f0;">Flauta traversa</div>
-                <div class="pasion-card" style="background:#f0f0f0;">Baloncesto</div>
-                <div class="pasion-card" style="background:#f0f0f0;">Colegio La Salle</div>
+            <h3>Amigos y Comunidad Tech</h3>
+            <div class="grid-pasiones">
+                <div class="pasion-card">
+                    <strong>Nick</strong>
+                    <p>Amigo, gracioso, compañero de proyectos de programacion y gaming.</p>
+                    <a href="#" class="amigo-link">Pagina de Nick (próximamente)</a>
+                </div>
+                <div class="pasion-card">
+                    <strong>Sergio</strong>
+                    <p>Carismatico, participamos juntos en eventos y hackathones UCSP.</p>
+                    <a href="#" class="amigo-link">Sitio web de Sergio</a>
+                </div>
+                <div class="pasion-card">
+                    <strong>Alexei</strong>
+                    <p>Solidario y divertido, exploramos nuevos lenguajes y frameworks.</p>
+                    <a href="#" class="amigo-link">Portafolio de Alexei</a>
+                </div>
             </div>
+            <p style="margin-top: 20px; font-size: 0.85rem; text-align: center;">Los enlaces personales se activarán próximamente.</p>
         </div>
     </main>
 
     <footer>
         <div class="footer-cols">
             <div>
-                <h4>Benjamin Azarías Palomino Rivadeneyra</h4>
-                <p>Estudiante de <a href="https://ucsp.edu.pe" target="_blank">Ciencias de la Computación | UCSP</a></p>
+                <h4>Benjamin Azarias Palomino Rivadeneyra</h4>
+                <p>Estudiante de <a href="https://ucsp.edu.pe" target="_blank">Ciencias de la Computacion | UCSP</a></p>
                 <p>Mentor: <a href="https://www.linkedin.com/in/ecuadrosv/" target="_blank">Dr. Ernesto Cuadros-Vargas</a></p>
                 <p><a href="http://www.linkedin.com/in/benjam%C3%ADn-azar%C3%ADas-palomino-rivadeneyra-8359ba414" target="_blank">LinkedIn: Benjamin Palomino</a></p>
             </div>
             <div>
                 <h4>Universidad</h4>
-                <p><a href="https://ucsp.edu.pe" target="_blank">UCSP - Arequipa, Perú</a></p>
+                <p><a href="https://ucsp.edu.pe" target="_blank">UCSP - Arequipa, Peru</a></p>
                 <p>Urb. Campiña Paisajista s/n Quinta Vivanco</p>
             </div>
             <div>
@@ -389,7 +468,7 @@
             </div>
         </div>
         <div class="titulo-final">
-            © 2025 Benjamin Palomino Rivadeneyra — CV en línea | Programación, tecnología y videojuegos
+            © 2025 Benjamin Palomino Rivadeneyra  CV en linea | Programacion, tecnologia y videojuegos
         </div>
     </footer>
 </body>
